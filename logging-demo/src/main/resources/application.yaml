@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: demo
+
+logging:
+  logstash:
+    # to enable LogstashTcpSocketAppender bean
+    enabled: true
+    url: 192.168.99.10:5000
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    beans:
+      enabled: true
